@@ -1,9 +1,5 @@
-import MoviesListBox from "./MoviesListBox";
-import WatchedMoviesListBox from "./WatchedMoviesListBox";
-
-export default function Main({movies}) {
+export default function Main({children}) {
     return <main className="main">
-        <MoviesListBox movies={movies}/>
-        <WatchedMoviesListBox/>
+        {children}
     </main>;
 }
